@@ -1426,6 +1426,9 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
                 if(it.usernames?.size()>0){
                     by = by+' usernames: '+it.usernames.join(", ")
                 }
+                if(it.urns?.size()>0){
+                    by = by+' urn: '+it.urns.join(", ")
+                }
 
                 [
                         description: it.description,
